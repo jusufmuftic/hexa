@@ -1,2 +1,2 @@
 # hexa
-Social Network in JavaScript
+Social Network in JavaScript!
