@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hexa</title>
+</head>
+
+<body>
+
+    <div class="logo">
+        <img src="img/logo (3).png">
+    </div>
+
+    <h1>Social Network intended for Software Developers</h1>
+
+    <div class="main-wrapper">
+        <form id="loginForm">
+            <div class="h2_login">
+                <img src="img/user.png">
+                <h2>Login</h2>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="login_email" placeholder="Elon Musk">
+            </div>
+
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="login_password" placeholder="******">
+            </div>
+
+            <button>Login</button>
+        </form>
+    </div>
+
+    <div class="register">
+        <p>Don't have an account?</p>
+        <button id="registration">Register</button>
+    </div>
+
+    <div class="custom-modal">
+            <img id="xImg" src="img/close.png">
+
+        <form id="registrationForm">
+            <h2>User Registration</h2>
+
+            <div>
+                <label for="username">Username: *</label>
+                <input id="username" type="text" name="username" placeholder="elon.musk">
+            </div>
+
+            <div>
+                <label for="email">Email address: *</label>
+                <input id="email" type="text" name="email" placeholder="elon@tesla.com">
+            </div>
+
+            <div>
+                <label for="password">Password: *</label>
+                <input id="password" type="password" name="password" placeholder="*******">
+            </div>
+
+            <div>
+                <label for="retype_password">Retype Password: *</label>
+                <input id="retype_password" type="password" name="retype_password" placeholder="*******">
+            </div>
+
+            <div>
+                <button>Register</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/validator.js"></script>
+    <script src="js/Session.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+
+</html>
