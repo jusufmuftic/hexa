@@ -35,4 +35,12 @@ class Post {
             let data = await response.json()
             return data
         }
+
+        delete(post_id) {
+            fetch(this.api_url + '/posts' + post_id, {
+                method: 'DELETE'
+            })
+            .then(response => response.json())
+            .then(data => {alert('Post deleted!')})
+        }
     }
