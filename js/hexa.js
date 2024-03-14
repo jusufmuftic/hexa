@@ -168,8 +168,13 @@ const commentPostSubmit = e => {
     main_post_el.querySelector('.post-comments').innerHTML += `<div class="single-comment">${comment_value}</div>`
 }
 
-const removeMyPost = e => {
+const removeMyPost = btn => {
+    let post_id = btn.closest('.single-post').getAttribute('data-post_id')
 
+    btn.closest('.single-post').remove()
+
+    let post = new Post()
+    post.delete(post_id)
 }
 
 const likePost = e => {
